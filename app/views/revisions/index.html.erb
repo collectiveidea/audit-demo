@@ -1,0 +1,11 @@
+<h1>Revisions for <%=h @page.title %></h1>
+<ul>
+<% @page.audits.each do |audit| %>
+  <li class="revision">
+    <%= audit.version %> - 
+    <%= audit.created_at.to_s(:long) %> -
+    <%= audit.action %> - <%= audit.changes.keys.map(&:humanize).to_sentence %>
+    <%= button_to 'Revert', page_revision_path(@page, audit.version), :method => :put %>
+  </li>
+<% end %>
+</ul>

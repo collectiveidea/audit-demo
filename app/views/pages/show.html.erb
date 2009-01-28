@@ -5,4 +5,5 @@
 
 <%= link_to 'Edit', edit_page_path(@page) %> |
 <%= link_to 'Destroy', @page, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Revisions', page_revisions_path(@page) %> |
 <%= link_to 'Back', pages_path %>
