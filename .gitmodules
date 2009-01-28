@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/cucumber"]
 	path = vendor/plugins/cucumber
 	url = git://github.com/aslakhellesoy/cucumber.git
+[submodule "vendor/plugins/acts_as_audited"]
+	path = vendor/plugins/acts_as_audited
+	url = git://github.com/collectiveidea/acts_as_audited.git
