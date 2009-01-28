@@ -1,0 +1,8 @@
+<h1 class="title"><%=h @page.title %></h1>
+<p>
+  <%=h @page.body %>
+</p>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Destroy', @page, :confirm => 'Are you sure?', :method => :delete %> |
+<%= link_to 'Back', pages_path %>

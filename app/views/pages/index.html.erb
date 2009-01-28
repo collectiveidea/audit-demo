@@ -1,0 +1,9 @@
+<h1>Pages</h1>
+
+<ul>
+<% for page in @pages %>
+  <li><%= link_to h(page.title), page %></li>
+<% end %>
+</ul>
+
+<%= link_to 'New page', new_page_path %>
